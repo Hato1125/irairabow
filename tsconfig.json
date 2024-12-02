@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "strict": true,
+        "skipLibCheck": true,
+        "incremental": true,
+        "noEmit": true,
+        "noImplicitAny": true,
+        "moduleResolution": "Node",
+        "outDir": "./built",
+        "rootDir": "./"
+    },
+    "exclude": [
+      "pxt_modules/**/*test.ts"
+    ]
+}

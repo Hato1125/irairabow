@@ -1,0 +1,30 @@
+{
+    "name": "irairabow",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*"
+    },
+    "files": [
+        "src/lib/char.ts",
+        "src/lib/renderer.ts",
+        "src/lib/counter.ts",
+        "src/lib/scene.ts",
+        "src/game/main.ts",
+        "src/game/text.ts",
+        "src/game/title.ts",
+        "src/game/game.ts",
+        "src/game/clear.ts",
+        "src/game/gameOver.ts",
+        "src/game/timeOver.ts"
+    ],
+    "targetVersions": {
+        "target": "7.0.51",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "languageRestriction": "javascript-only"
+}

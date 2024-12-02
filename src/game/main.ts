@@ -4,6 +4,7 @@
 /// <reference path="../lib/scene.ts" />
 
 /// <reference path="./text.ts" />
+/// <reference path="./emoji.ts" />
 /// <reference path="./title.ts" />
 /// <reference path="./game.ts" />
 /// <reference path="./clear.ts" />
@@ -21,6 +22,7 @@ IrairaLib.SceneManager.regist('gameOver', new Irairabow.Scene.GameOver());
 
 while (true) {
   IrairaLib.Renderer.clear();
+
   IrairaLib.SceneManager.update();
   IrairaLib.SceneManager.render();
   IrairaLib.Renderer.swapBuffer();

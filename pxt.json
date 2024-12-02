@@ -10,6 +10,7 @@
         "src/lib/renderer.ts",
         "src/lib/counter.ts",
         "src/lib/scene.ts",
+        "src/game/emoji.ts",
         "src/game/main.ts",
         "src/game/text.ts",
         "src/game/title.ts",

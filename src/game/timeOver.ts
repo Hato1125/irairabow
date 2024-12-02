@@ -5,7 +5,8 @@ namespace Irairabow.Scene {
       Irairabow.TIME_OVER_TEXT.length
         * IrairaLib.Renderer.WIDTH
         + IrairaLib.Renderer.WIDTH,
-      10
+      10,
+      false
     );
 
     constructor() {
@@ -26,7 +27,11 @@ namespace Irairabow.Scene {
     }
 
     onRender(): void {
-      IrairaLib.Renderer.renderText(Irairabow.TIME_OVER_TEXT, -this.counter.counter, 0);
+      if (this.counter.state !== IrairaLib.CounterState.End) {
+        IrairaLib.Renderer.renderText(Irairabow.TIME_OVER_TEXT, -this.counter.counter, 0);
+      } else {
+        IrairaLib.Renderer.renderImage(Irairabow.Emoji.BAD, 0, 0);
+      }
     }
   }
 }

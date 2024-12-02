@@ -5,7 +5,8 @@ namespace Irairabow.Scene {
       Irairabow.CLEAR_TEXT.length
         * IrairaLib.Renderer.WIDTH
         + IrairaLib.Renderer.WIDTH,
-      10
+      10,
+      false
     );
 
     constructor() {
@@ -26,7 +27,11 @@ namespace Irairabow.Scene {
     }
 
     onRender(): void {
-      IrairaLib.Renderer.renderText(Irairabow.CLEAR_TEXT, -this.counter.counter, 0);
+      if (this.counter.state !== IrairaLib.CounterState.End) {
+        IrairaLib.Renderer.renderText(Irairabow.CLEAR_TEXT, -this.counter.counter, 0);
+      } else {
+        IrairaLib.Renderer.renderImage(Irairabow.Emoji.HAPPY, 0, 0);
+      }
     }
   }
 }

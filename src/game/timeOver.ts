@@ -14,6 +14,12 @@ namespace Irairabow.Scene {
     }
 
     onLoad(): void {
+      control.inBackground(() => {
+        for (let note of Irairabow.Song.GAMEOVER) {
+          music.playTone(note[0], note[1]);
+        }
+      });
+
       this.counter.reset();
       this.counter.play();
     }

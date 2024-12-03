@@ -5,6 +5,7 @@
 
 /// <reference path="./text.ts" />
 /// <reference path="./emoji.ts" />
+/// <reference path="./song.ts" />
 /// <reference path="./title.ts" />
 /// <reference path="./game.ts" />
 /// <reference path="./clear.ts" />

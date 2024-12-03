@@ -13,6 +13,7 @@
         "src/game/emoji.ts",
         "src/game/main.ts",
         "src/game/text.ts",
+        "src/game/song.ts",
         "src/game/title.ts",
         "src/game/game.ts",
         "src/game/clear.ts",

@@ -8,7 +8,7 @@ namespace Irairabow.Scene {
 
   export class Game extends IrairaLib.Scene {
     counter: IrairaLib.Counter = new IrairaLib.Counter(0, 0, 0, true);
-    timer: IrairaLib.Counter = new IrairaLib.Counter(0, 60, 1, false);
+    timer: IrairaLib.Counter = new IrairaLib.Counter(0, 25, 1, false);
 
     textAnimeCounter: number = 0;
     timeCounter: number = 0;

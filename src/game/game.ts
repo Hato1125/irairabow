@@ -45,8 +45,8 @@ namespace Irairabow.Scene {
           break;
         case GameState.Play:
           this.timer.update(DELTA_TIME);
-          this.counter.end = this.timer.counter.toString().length * IrairaLib.Renderer.WIDTH + 5;
-          this.counter.speed = (this.timer.counter >= 10 ? 20 : 15);
+          this.counter.end = (this.timer.end - this.timer.counter).toString().length * IrairaLib.Renderer.WIDTH + 5;
+          this.counter.speed = ((this.timer.end - this.timer.counter) >= 10 ? 20 : 15);
 
           if(this.timer.counter >= this.timer.end)
             IrairaLib.SceneManager.change('timeOver');
@@ -69,7 +69,7 @@ namespace Irairabow.Scene {
           break;
         case GameState.Play:
           IrairaLib.Renderer.renderText(
-            this.timer.counter.toString(),
+            (this.timer.end - this.timer.counter).toString(),
             -this.counter.counter,
             0
           );
